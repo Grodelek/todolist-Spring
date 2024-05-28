@@ -3,15 +3,14 @@ package list.todolist;
 import lombok.Data;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@Data
 public class TaskController {
     List<Task> taskList = new ArrayList<>();
 

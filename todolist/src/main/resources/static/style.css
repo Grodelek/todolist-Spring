@@ -28,3 +28,14 @@ button{
     height: 400px;
     border-radius: 20px;
 }
+.task-info{
+    font-size: 25px;
+}
+.task-checkbox{
+    width: 20px;
+    height: 20px;
+}
+.task-input-info{
+    margin: 10px;
+    font-size: 20px;
+}
