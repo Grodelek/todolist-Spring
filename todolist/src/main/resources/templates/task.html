@@ -11,14 +11,14 @@
     <ul>
       <div th:each="task : ${task}" >
         <input type="checkbox" th:value="${task.name}" class="task-checkbox"/>
-          <label  th:for="${task.name} " th:text="${task.name}">Task Name</label>
+          <label th:for="${task.name}" th:text="${task.name}+':'">Task Name</label>
           <span th:text="${task.description}">Task description:</span>
       </div>
     </ul>
       <div class="button-container">
     <a href="/"><button>Home</button></a>
     <a href="/add"><button>Add Task</button></a>
-    <button>Delete Task</button>
+          <button>Delete Task</button>
       </div>
   </div>
 </div>
